@@ -1,0 +1,34 @@
+.container
+        {
+          background-color: blueviolet;
+          display: inline-block;
+          margin-left: 10px;
+          margin-top: 30px;
+        }
+        *
+        {
+            margin: 0px;
+            color: white;
+        }
+        body
+        {
+            background-color: aqua;
+           
+        }
+        #itemid
+        {
+            background-color: rgb(174, 26, 38);
+        }
+        #itemname
+        {
+            background-color: cornflowerblue;
+        }
+        #ispub
+        {
+            background-color: green;
+
+        }
+        button
+        {
+            margin: 10px;
+        }

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/dish.css' %}">
+</head>
+<body>
+    <center>
+        <div><h1 style="background-color: blue;">List of  Dishes</h1></div>
+        {% for item in DO %}
+        {% if item.ispublished %}
+        <div class="container">
+            <div id="itemid">{{item.dishid}}</div>
+            <div id="itemname">{{item.dishname}}</div>
+            <div><img src="{{ item.imageurl }}" alt="image not found" width="100px" height="100px">
+            </div>
+            <button id="ispub">{{item.ispublished}}</button>
+        
+        </div>
+        {% endif %}
+    
+        {% endfor %}
+    </center>
+</body>
+</html>
